@@ -1,9 +1,8 @@
-import { Application } from "express";
-import express from "express";
-import { resolve } from "path";
+import express, { Application } from 'express';
+import { resolve } from 'path';
 import { create } from 'express-handlebars';
-import { router } from "./app.router";
-import { run } from "./db/connectDb";
+import { router } from './app.router';
+import { run } from './db/connectDb';
 
 const port = 3000;
 const app : Application = express();
@@ -18,7 +17,7 @@ app.set('view engine', 'hbs');
 // router
 app.use(router);
 
-//db 
+// db
 run();
 
 // sever
