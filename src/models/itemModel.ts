@@ -24,7 +24,7 @@ const articleModel = new Schema<itemSchemaInterface>({
   image: {
     type: String,
     required: true,
-  },
+  },  
 });
 
 export const ItemModel = model('article', articleModel);

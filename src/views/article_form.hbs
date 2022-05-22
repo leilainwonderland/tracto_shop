@@ -41,13 +41,13 @@
           </div>
           <input type="text" name="price" required id="price"
             class="pl-7 pr-12 sm:text-sm border border-grey-500 rounded-md h-6" placeholder="0.00">
-          <label for="currency" class="sr-only">Currency</label>
+          {{!-- <label for="currency" class="sr-only">Currency</label>
           <select id="currency" name="currency"
             class="h-full py-0 pl-2 pr-7 border border-grey-500 bg-transparent text-gray-500 sm:text-sm rounded-md">
             <option>EUR</option>
             <option>USD</option>
             <option>CAD</option>
-          </select>
+          </select> --}}
         </div>
         <label for="quantity" class=" text-ml font-medium text-gray-700 pb-1">Nombre d'articles ?</label>
         <input type="number" name="quantity" required id="quantity"
@@ -57,8 +57,9 @@
       </div>
     </div>
   </form>
-  <hr class="m-5">
-  <div class="relative max-w-3xl mx-auto text-center flex flex-col justify-between">
+  {{!--
+  <hr class="m-5"> --}}
+  {{!-- <div class="relative max-w-3xl mx-auto text-center flex flex-col justify-between">
     <h2 class="relative inline-block px-4 text-2xl font-bold text-center bg-transparent text-gray-800 my-4">
       Vos articles favoris
     </h2>
@@ -79,4 +80,4 @@
       </section>
     </div>
   </div>
-</div>
+</div> --}}

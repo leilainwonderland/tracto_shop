@@ -6,7 +6,7 @@ class ArticleDataHandler {
     const body = req.body;
 
     console.log(body);
-    res.render('article_list');
+    res.render('article_form');
   };
 };
 
