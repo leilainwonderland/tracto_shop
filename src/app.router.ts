@@ -1,4 +1,5 @@
 import { Router, Request, Response } from 'express';
+import { ErrorHandler } from './handlers/ErrorHandler';
 
 const router : Router = Router();
 
@@ -13,5 +14,7 @@ router.get('/article_list', (req: Request, res: Response) => {
 router.get('/article_sale', (req: Request, res: Response) => {
   res.render('article_sale');
 });
+
+router.get('*', ErrorHandler.execute);
 
 export { router };
