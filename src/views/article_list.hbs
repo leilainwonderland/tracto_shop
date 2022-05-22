@@ -1,5 +1,5 @@
 <div class="flex flex-col justify-evenly">
-  <form action="#" method="POST">
+  <form action="article_data" method="post">
     <div class="shadow sm:rounded-md sm:overflow-hidden">
       <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
         <div class="grid grid-cols-3 gap-6">
@@ -44,9 +44,9 @@
           <label for="currency" class="sr-only">Currency</label>
           <select id="currency" name="currency"
             class="h-full py-0 pl-2 pr-7 border border-grey-500 bg-transparent text-gray-500 sm:text-sm rounded-md">
+            <option>EUR</option>
             <option>USD</option>
             <option>CAD</option>
-            <option>EUR</option>
           </select>
         </div>
         <label for="quantity" class=" text-ml font-medium text-gray-700 pb-1">Nombre d'articles ?</label>

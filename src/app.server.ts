@@ -7,6 +7,11 @@ import { run } from './db/connectDb';
 const port = 3000;
 const app : Application = express();
 
+// bodyParser
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public'));
+
 // HBS
 app.set('views', resolve(process.cwd(), 'src', 'views'));
 const hbsConfig = { extname: '.hbs' };
@@ -16,6 +21,7 @@ app.set('view engine', 'hbs');
 
 // router
 app.use(router);
+
 
 // db
 run();
